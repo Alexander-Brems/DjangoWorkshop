@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 # HTML code to display
-html = '''<h1>App 1 - Simple App</h1>
+html = '''<h1>App 1a - Simple App</h1>
 <p>
     This is simple Django app that was created using the default command script.
 </p>
@@ -19,7 +19,7 @@ def home(request):
 
 # Test page
 def test(request):
-    return HttpResponse("<h1>App 1 - Test page</h1><a href=x>home</a>")
+    return HttpResponse("<h1>App 1a - Test page</h1><a href=x>home</a>")
 
 
 # URL patterns to match

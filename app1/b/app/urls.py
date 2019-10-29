@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from app.views import home, test
+from notes.views import home, test
 
 
 
