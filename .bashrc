@@ -11,7 +11,7 @@ alias bashrc='. $x/.bashrc'
 
 
 # Git status
-alias g='cd $x && git status; cd $a && git status'
+alias g='cd $x && git status'
 
 
 # Git commit of all project code

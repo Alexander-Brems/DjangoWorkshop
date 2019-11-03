@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
 
-# Home View
 def home(request):
     title = "App 2b - Variable Insertion - Home"
     body = 'Body Text'
@@ -9,60 +8,17 @@ def home(request):
     return render(request, "home.html", data)
 
 
-# Test page
-def test(request):
-    title = "App 2b - Variable Insertion - Test"
-    html = '''
-        <p>
-            This is simple Django app that was created using the default command script.
-        </p>
-        <p>
-            This page uses HTML text from a template file "notes/templates/test.html".
-        </p>
-        <ul>
-            <li>
-                <a href="/">Visit Home</a>
-            </li>
-            <li>
-                <a href="notes">Visit Notes</a>
-            </li>
-            <li>
-                <a href="test">Visit Test</a>
-            </li>
-            <li>
-                <a href="random">Visit Random Page</a>
-            </li>
-        </ul>
-        '''
-    data = {'title': title, 'body': html}
-    return render(request, "test.html", data)
+def page1(request):
+    title = "App 2b - Variable Insertion - Page 1"
+    body = 'Text is injected into the template by the view code.'
+    data = {'title': title, 'body': body}
+    return render(request, "page.html", data)
 
 
-# Notes page
-def notes(request):
-    title = "App 2b - Variable Insertion - Notes"
-    notes_body = '''
-        <p>
-            This is simple Django app that was created using the default command script.
-        </p>
-        <p>
-            This page uses HTML text from a template file "notes/templates/test.html".
-        </p>
-        <ul>
-            <li>
-                <a href="/">Visit Home</a>
-            </li>
-            <li>
-                <a href="notes">Visit Notes</a>
-            </li>
-            <li>
-                <a href="test">Visit Test</a>
-            </li>
-            <li>
-                <a href="random">Visit Random Page</a>
-            </li>
-        </ul>
-        '''
-    data = {'title': title, 'body': notes_body}
-    return render(request, "notes.html", data)
+def page2(request):
+    title = "App 2b - Variable Insertion - Page 2"
+    body = 'Text is injected into the template by the view code.' + \
+            'This page also adds a list of items.'
+    data = {'title': title, 'body': body, 'list': ['milk', 'bread', 'meat']}
+    return render(request, "page.html", data)
 

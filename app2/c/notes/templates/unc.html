@@ -1,49 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <meta charset="utf-8">
-    <title>{{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+
+    <link rel="icon" type="image/x-icon" href="https://unco-bacs.org/bacs350/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unco-bacs.org/bacs350/unc.css">
 
-    <link rel="stylesheet" href="/static/unc.css">
 </head>
-
 
 <body>
 
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-8">
-                    <h1>UNC Django Workshop</h1>
-                    <h2>{{ title }}</h2>
-                </div>
-                <div class="logo col-sm-4">
-                    <div class="pull-right">
-                        <img class="img-responsive" src="/static/Bear.png" width="150">
-                    </div>
-                </div>
-            </div>
+        <div class="pull-right">
+            <img src="https://unco-bacs.org/bacs350/images/Bear.200.png" class="img-rounded img-responsive" alt="UNC Bear" width="120">
+        </div>
+        <div>
+            <h1>UNC Django Workshop</h1>
+            <h2>{{ title }}</h2>
         </div>
     </header>
 
     <main>
+        <p>See Also</p>
+        <ul>
+            <li>
+                <a href="/">Visit Home</a>
+            </li>
+            <li>
+                <a href="page1">Visit Page 1</a>
+            </li>
+            <li>
+                <a href="page2">Visit Page 2</a>
+            </li>
+        </ul>
+
         {% block content %}
-        <h1>BASE UNC TEMPLATE</h1>
+        <h2>BASE UNC TEMPLATE</h2>
+        <p>No content is defined.</p>
         {% endblock %}
     </main>
-
-    <footer>
-        <a href="http://shrinking-world.com">
-            <div class="logo-text">Copyright &copy; 2019 Shrinking World</div>
-            <img class="img-rounded img-responsive" src="/static/Globe.jpg" alt="Shrinking World Solutions" width="150">
-        </a>
-    </footer>
-
 </body>
 
 </html>

@@ -1,15 +1,12 @@
 from django.conf.urls import url
-from notes.views import home, missing, notes, test, unc
-
+from notes.views import home, page1, page2
 
 
 # URL patterns to match
 urlpatterns = [
-    url('home', home),
-    url('notes', notes),
-    url('test', test),
-    url('unc',  unc),
-    url('', missing),
+    url('page1', page1),
+    url('page2', page2),
+    url('', home),
 ]
 
 

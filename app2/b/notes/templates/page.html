@@ -18,3 +18,18 @@
 <p>
     {{ body }}
 </p>
+
+
+{% if list %}
+
+<ul>
+    {% for x in list %}
+
+    <li>
+        {{ x }}
+    </li>
+
+    {% endfor %}
+</ul>
+
+{% endif %}
