@@ -14,6 +14,10 @@ alias bashrc='. $x/.bashrc'
 alias g='cd $x && git status'
 
 
+# Django Management commands
+alias m=./manage.py
+
+
 # Git commit of all project code
 function com {
     git add -A $x &&
