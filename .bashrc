@@ -5,10 +5,11 @@ x=$HOME/UNC/DjangoWorkshop
 # Run the web server
 alias x='./manage.py runserver 8005'
 
+# Django Workshop
+alias djw='. ~/UNC/DjangoWorkshop/.bashrc'
 
 # Setup shell context
 alias bashrc='. $x/.bashrc'
-
 
 # Git status
 alias g='cd $x && git status'
