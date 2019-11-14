@@ -84,13 +84,15 @@ class SlidesList(ListView):
 templates/slides_list.html
 
 ```html
-{% for slides in object_list %}
-    <ul>
+<ul>
+    {% for slides in object_list %}
         <li>
-            Slide Show #{{ slides.pk }}. <a href="{{ slides.pk }}/">{{ slides.title }}</a>
+            <a href="{{ slides.pk }}/">
+                {{ slides.title }}
+            </a>
         </li>
-    </ul>
-{% endfor %}
+    {% endfor %}
+</ul>
 ```
 
 

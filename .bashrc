@@ -1,5 +1,8 @@
 # Define a shell variable to the top of the project
-x=$HOME/UNC/DjangoWorkshop
+x=$HOME/Documents/DjangoWorkshop
+
+# x=$HOME/UNC/DjangoWorkshop
+
 
 
 # Run the web server
@@ -25,6 +28,11 @@ function com {
     git commit -m "$*" &&
     git pull &&
     git push
+}
+
+function d {
+    cd $1
+    ls -al
 }
 
 
