@@ -1,15 +1,13 @@
 # Define a shell variable to the top of the project
 x=$HOME/Documents/DjangoWorkshop
 
-# x=$HOME/UNC/DjangoWorkshop
-
-
+echo $x
 
 # Run the web server
 alias x='./manage.py runserver 8005'
 
 # Django Workshop
-alias djw='. ~/UNC/DjangoWorkshop/.bashrc'
+alias djw='. ~/Documents/DjangoWorkshop/.bashrc'
 
 # Setup shell context
 alias bashrc='. $x/.bashrc'
@@ -52,3 +50,4 @@ __        __         _        _
                                          |_|    
 EOF
 
+d $x

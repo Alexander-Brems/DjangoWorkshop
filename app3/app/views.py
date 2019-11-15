@@ -9,6 +9,9 @@ def home(request):
             <li>
                 <a href="/">Top of Web Server</a>
             </li>
+             <li>
+                <a href="static/Bear.png">Bear.png</a> - shows static server
+            </li>
             <li>
                 <a href="1">Test #1</a> - pass arg in URL path
             </li>
