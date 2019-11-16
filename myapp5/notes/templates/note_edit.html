@@ -1,0 +1,13 @@
+{% extends "home.html" %}
+
+{% block content %}
+
+<h2>Edit Note</h2>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button class="button">Save Note</button>
+    <a href=".." class="button">Cancel</a>
+    <a href="delete/" class="button"> Delete Note</a>
+</form>
+
+{% endblock %}
